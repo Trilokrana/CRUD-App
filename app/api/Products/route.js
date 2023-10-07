@@ -1,4 +1,4 @@
-import connectToMongoDB from "@/lib/mongoDB"
+import { connectToMongoDB } from "@/lib/mongoDB"
 import { NextResponse } from "next/server"
 import Product from "@/models/Products"
 
@@ -21,5 +21,5 @@ export async function DELETE(request) {
     await connectToMongoDB();
     await Product.findByIdAndDelete(id)
     const Products = await Product.findById()
-    return NextResponse.json({ message: 'Product deleted' },{status:201})
+    return NextResponse.json({ message: 'Product deleted' }, { status: 201 })
 }
