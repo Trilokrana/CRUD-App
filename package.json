@@ -11,6 +11,7 @@
   "dependencies": {
     "autoprefixer": "10.4.16",
     "bcryptjs": "^2.4.3",
+    "css": "^3.0.0",
     "eslint": "^8.50.0",
     "eslint-config-next": "^13.5.4",
     "font": "^0.0.4",
@@ -18,6 +19,7 @@
     "mongoose": "^7.6.0",
     "next": "13.5.4",
     "next-auth": "^4.23.2",
+    "post": "^0.0.1",
     "postcss": "8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
