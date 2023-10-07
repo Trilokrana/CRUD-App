@@ -17,10 +17,10 @@ const getProducts = async () => {
 }
 
 const Products = async () => {
-    const { Products } = await getProducts()
+    const { products } = await getProducts()
     return (
         <>
-            {Products.map((product) => (
+            {products.map((product) => (
 
                 <div key={product._id} className='p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start rounded-lg hover:border-slate-500 hover:bg-gray-100 transition-all' >
                     <div>
