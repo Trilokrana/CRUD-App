@@ -16,11 +16,11 @@ const getProducts = async () => {
     }
 }
 
-const Products = async () => {
-    const { products } = await getProducts()
+const ProductsList = async () => {
+    const { Products } = await getProducts()
     return (
         <>
-            {products.map((product) => (
+            {Products.map((product) => (
 
                 <div key={product._id} className='p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start rounded-lg hover:border-slate-500 hover:bg-gray-100 transition-all' >
                     <div>
@@ -45,4 +45,4 @@ const Products = async () => {
     )
 }
 
-export default Products 
+export default ProductsList 
