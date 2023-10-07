@@ -1,13 +1,13 @@
 import Navbar from "../components/Navbar"
-import Products from "../components/Products"
 import LogOut from '@/app/components/LogOut'
+import { Products } from "../components/Products"
 export default function Dashboard() {
     return (
-        <div>
-            <Navbar/>
+        <>
+            <Navbar />
             <Products />
             <LogOut />
-        </div>
+        </>
     )
 
 }

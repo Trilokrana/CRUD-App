@@ -11,8 +11,9 @@
   "dependencies": {
     "autoprefixer": "10.4.16",
     "bcryptjs": "^2.4.3",
-    "eslint": "8.50.0",
-    "eslint-config-next": "13.5.4",
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^13.5.4",
+    "font": "^0.0.4",
     "mongodb": "^6.1.0",
     "mongoose": "^7.6.0",
     "next": "13.5.4",

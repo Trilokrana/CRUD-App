@@ -38,7 +38,7 @@ const SignUp = () => {
                 setError("User already exists.");
                 return;
             }
-            */
+        */
 
             const res = await fetch("api/register", {
                 method: "POST",
