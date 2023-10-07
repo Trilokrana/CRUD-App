@@ -1,0 +1,48 @@
+import Link from 'next/link'
+import RemoveBtn from './RemoveBtn'
+
+const getProducts = async () => {
+    try {
+        const res = await fetch('http://localhost:3000/api/Products', {
+            cache: 'no-store'
+        })
+
+        if (!res.ok) {
+            throw new Error("Error Fetching the Product")
+        }
+        return res.json()
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const Products = async () => {
+    const { Products } = await getProducts()
+    return (
+        <>
+            {Products.map((product) => (
+
+                <div key={product._id} className='p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start rounded-lg hover:border-slate-500 hover:bg-gray-100 transition-all' >
+                    <div>
+                        <h1 className='font-bold text-2xl'>Product Name: {product.title}</h1>
+                        <div className='text-lg '><strong>Category:</strong> {product.category}</div>
+                        <div className='text-lg'><strong>Price:</strong> {product.price}</div>
+                        <div className='text-lg'><strong>Quantity:</strong> {product.quantity}</div>
+                        <div className='text-lg'><strong>Description:</strong> {product.description}</div>
+                        <div className='text-lg'></div>
+                    </div>
+                    <div className='flex px-5'>
+                        <RemoveBtn  id={product._id} />
+                        <Link className='p-2 bg-gray-200 hover:bg-gray-300 rounded-xl ml-2.5 ' href={`/edit/${product._id}`}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                            </svg>
+                        </Link>
+                    </div>
+                </div>
+            ))}
+        </>
+    )
+}
+
+export default Products 
