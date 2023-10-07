@@ -1,4 +1,4 @@
-#Project Description: GitHub CRUD Web App
+#Project Description:CRUD Web App
 
 This GitHub CRUD (Create, Read, Update, Delete) web application is a versatile platform designed for efficient management of product information. Developed using Next.js and React JavaScript, this project combines the power of a React framework with the seamless server-side rendering capabilities of Next.js, offering a blazing-fast and responsive user experience.
 
