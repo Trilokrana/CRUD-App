@@ -1,6 +1,28 @@
-#Project Description:CRUD Web App
+#**Project Name:** Stock Inventory Management App
 
 This GitHub CRUD (Create, Read, Update, Delete) web application is a versatile platform designed for efficient management of product information. Developed using Next.js and React JavaScript, this project combines the power of a React framework with the seamless server-side rendering capabilities of Next.js, offering a blazing-fast and responsive user experience.
+
+Here's a description for a GitHub project:
+
+**Description:**
+
+Welcome to the Stock Inventory Management App! This application is designed to help users efficiently manage their stock-related information. Here's a step-by-step guide on how to use the app:
+
+1. **Registration:** Start by registering for an account. Click on the "Sign Up" page and provide your details to create an account. After successful registration, you'll be automatically redirected to the login page.
+
+2. **Login:** Use the credentials you provided during registration to log in to your account. Once logged in, you'll gain access to the main application.
+
+3. **Main Application:** The heart of the Stock Inventory Management App! Here, you can perform various actions to manage your stock:
+
+   - **Add Products:** Click on the "Add Product" option to input product details, including the product name, category, description, price, and quantity. This feature allows you to efficiently add new items to your inventory.
+
+   - **Edit Products:** If you need to update the details of a product, simply select the product you want to edit and make the necessary changes. This ensures your inventory remains accurate and up to date.
+
+   - **Delete Products:** In case you want to remove a product from your inventory, you can easily do so by selecting the product and choosing the "Delete" option.
+
+4. **Log Out:** When you're done managing your stock, you can safely log out of your account by clicking on the "Log Out" button.
+
+Our Stock Inventory Management App simplifies the process of tracking, updating, and maintaining stock-related information. It's user-friendly and designed to enhance your inventory management experience. Get started today and keep your stock organized!
 
 **Key Features:**
 
